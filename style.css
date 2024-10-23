@@ -1,0 +1,156 @@
+:root {
+    --cor-texto: #FFFFFF;
+    --cor-subtexto: #C0C0C0;
+    --cor-botao: #167BF7;
+    --cor-fundo: #00030C;
+    --cor-botao-efeito: #3C92FA;
+
+    --fonte-principal: 'Inter';
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("img/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container_botao {
+    background-color: var(--cor-botao);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-texto);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--cor-texto);
+}
+
+.container_aviso{
+    font-size: 12px;
+    color: var(--cor-subtexto);
+}
+
+.container_titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container_img{
+    margin: 1em 0 2em 0;
+}
+
+.container_caixa{
+    margin: 0 6em;
+}
+
+.secundario_img{
+    width: 80%;
+}
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.desc_titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-texto);
+    margin-bottom: 0.1em;
+}
+
+.desc_texto{
+    color: var(--cor-subtexto);
+}
+
+.secundario_botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container_desc{
+    padding: 2em;
+}
+
+.dispositivos_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos{
+    text-align: center;
+}
+
+.dispositivos_titulo{
+    font-size: 48px;
+    color: var(--cor-texto);
+}
+
+.lista_item{
+    font-size: 32px;
+    color: var(--cor-texto);
+}
+
+.footer_lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista_link a{
+    margin-left: 1em;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.footer_texto{
+    color: var(--cor-subtexto);
+    margin: 1em 0;
+    font-size: 14px;
+}
+
+footer{
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.lista_link a:hover{
+    color: var(--cor-botao);
+}
+
+.lista_link a:active{
+    color: purple;
+}
+
+.container_botao:hover{
+    background-color: var(--cor-botao-efeito);
+    color: var(--cor-fundo);
+}
